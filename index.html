@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HydroDynamo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <div id="titulo">
+            <h1>Hydrodynamo</h1>
+            <img src="logo.jpeg" alt="">
+        </div>
+
+        <div id="inputs">
+            <div class="userInput">
+                <h2>Numero de turbinas</h2>
+                <input type="number">
+            </div>
+            <div class="userInput">
+                <h2>Numero de personas</h2>
+                <input type="number">
+            </div>
+            <div class="userInput">
+                <h2>Litros por persona</h2>
+                <input type="number">
+            </div>
+        </div>
+
+        <div id="info">
+            <div id="datos">
+                <h2>Datos</h2>
+                <h3>A) Tiempo de cálculo: 86400 Segundos </h3>
+                <h3>B) Litros Totales: <br>
+                    (Número de personas * Litros p/persona) = 60000 Litros</h3>
+                <h3>C) Flujo Volumetrico: <br>
+                    Litros Totales/Tiempo de calculo = 0.694 m3/s</h3>
+                <h3>D) Área: 0.004417864 m2</h3>
+                <h3>E) Densidad del agua: 1 Kg/m3</h3>
+                <h3>F) Corriente: 2.6A</h3>
+                <h3>G) Voltaje: 110V</h3>
+                <h3>H) Velocidad: <br>
+                    Flujo/Area = 157.19 m/s</h3>
+                <h3>I) Coeficiente de potencia: <br>
+                    (Voltaje*Corriente)/600 = 157.19 m/s</h3>
+            </div>
+            <div id="potencia">
+                <h2>Potencia Electrica</h2>
+                <h3>Numero de turbinas * <br> 1/2 * <br> Densidad del agua * <br>Velocidad3 * <br>Area * <br>Coeficiente de potencia</h3>
+                <h3 id="potenciaFinal">1289W</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
