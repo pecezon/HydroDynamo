@@ -13,22 +13,25 @@
 <body>
     <div id="container">
         <div id="titulo">
-            <h1>Hydrodynamo</h1>
+            <div id="textoTitulo">
+                <h1>Hydrodynamo</h1>
+                <p>Calcula tu potencia</p>
+            </div>
             <img src="logo.jpeg" alt="">
         </div>
 
         <div id="inputs">
             <div class="userInput">
                 <h2>Numero de turbinas</h2>
-                <input type="number" id="numeroTurbinas" onchange="calcular()" value="2">
+                <input type="number" id="numeroTurbinas" onchange="calcular()" value="2" min="1" max="100" step="1">
             </div>
             <div class="userInput">
                 <h2>Numero de personas</h2>
-                <input type="number" id="numeroPersonas" onchange="calcular()" value="4">
+                <input type="number" id="numeroPersonas" onchange="calcular()" value="4" min="1" max="100" step="1">
             </div>
             <div class="userInput">
                 <h2>Litros por persona</h2>
-                <input type="number" id="litrosPorPersona" onchange="calcular()" value="15000">
+                <input type="number" id="litrosPorPersona" onchange="calcular()" value="15000" min="1" max="100" step="1">
             </div>
         </div>
 

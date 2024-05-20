@@ -11,6 +11,7 @@ h1{
 
 h2{
     font-size: 24px;
+    font-weight: bold;
 }
 
 h3{
@@ -34,6 +35,17 @@ h3{
     align-items: center;
 }
 
+#textoTitulo p{
+    font-size: 20px;
+}
+
+#textoTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #titulo img{
     width: 125px;
     height: auto;
@@ -41,7 +53,7 @@ h3{
 }
 
 #titulo h1{
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 #inputs{
@@ -83,7 +95,6 @@ h3{
     justify-content: space-around;
     width: 85%;
     flex-wrap: wrap;
-    padding: 15px 0;
 }
 
 #info h3{
@@ -93,9 +104,11 @@ h3{
 #datos{
     width: 50%;
     background-color: #00C6E9;
-    padding: 25px;
+    padding: 25px 0;
     border-radius: 15px;
     word-wrap: break-word;
+    padding: 15px;
+    margin-top: 25px;
 }
 
 #datos h2{
@@ -113,7 +126,6 @@ h3{
     background-color: #666A9A;
     border-radius: 15px;
     margin-left: 10px;
-    margin-top: 10px;
     padding: 15px;
 }
 
@@ -144,7 +156,9 @@ h3{
     #datos{
         flex: 100;
     }
-
+    #titulo p{
+        font-size: 16px;
+    }
     #titulo img{
         width: 75px;
         height: auto;
@@ -162,11 +176,12 @@ h3{
 
     #datos{
         width: 85%;
+        margin-top: 15px;
     }
 
     #potencia{
         width: 85%;
-        margin: 15px 0;
+        margin-top: 15px;
     }
 
     #potencia{
