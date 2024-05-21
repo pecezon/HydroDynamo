@@ -13,11 +13,11 @@ const potenciaFinalDiv = document.getElementById("potenciaFinal");
 function calcular() {
     let nP = numeroPersonas.value;
     let nT = numeroTurbinas.value;
-    let lPP = litrosPorPersona.value;
+    let lPP = litrosPorPersona.value/1000;
 
     let litrosTotales = lPP*nP;
-    let flujoVolumetrico = litrosTotales/86400;
-    let velocidad = flujoVolumetrico/0.004417864;
+    let flujoVolumetrico = litrosTotales/60;
+    let velocidad = (flujoVolumetrico*60)/0.004417864;
 
     litrosTotalesDiv.innerHTML = litrosTotales.toFixed(2);
     flujoVolumetricoDiv.innerHTML = flujoVolumetrico.toFixed(4);

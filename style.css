@@ -95,6 +95,7 @@ h3{
     justify-content: space-around;
     width: 85%;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 #info h3{
@@ -192,4 +193,11 @@ h3{
         font-size: 30px;
     }
 
+}
+
+@media(height <= 800px){
+    #titulo img{
+        width: 75px;
+        height: auto;
+    }
 }

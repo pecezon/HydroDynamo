@@ -31,31 +31,31 @@
             </div>
             <div class="userInput">
                 <h2>Litros por persona</h2>
-                <input type="number" id="litrosPorPersona" onchange="calcular()" value="15000" min="1" max="100" step="1">
+                <input type="number" id="litrosPorPersona" onchange="calcular()" value="110" min="1" max="100" step="1">
             </div>
         </div>
 
         <div id="info">
             <div id="datos">
                 <h2>Datos</h2>
-                <h3>A) Tiempo de cálculo: 86400 Segundos </h3>
+                <h3>A) Tiempo de cálculo: 60 Segundos </h3>
                 <h3>B) Litros Totales: <br>
                     (Número de personas * Litros p/persona) = <span id="litrosTotales">60000 </span>Litros</h3>
                 <h3>C) Flujo Volumetrico: <br>
-                    Litros Totales/Tiempo de calculo = <span id="flujoVolumetrico">0.694 </span>m<sup>3</sup>/s</h3>
+                    (Litros Totales/1000)/Tiempo de calculo = <span id="flujoVolumetrico">0.694 </span>m<sup>3</sup>/s</h3>
                 <h3>D) Área: 0.004417 m<sup>2</sup></h3>
                 <h3>E) Densidad del agua: 1 Kg/m<sup>3</sup></h3>
                 <h3>F) Corriente: 2.6A</h3>
                 <h3>G) Voltaje: 110V</h3>
                 <h3>H) Velocidad: <br>
-                    Flujo/Area = <span id="velocidad">157.19 </span>m/s</h3>
+                    (Flujo*60)/Area = <span id="velocidad">157.19 </span>m/s</h3>
                 <h3>I) Coeficiente de potencia: <br>
                     (Voltaje*Corriente)/600 = 0.4766</h3>
             </div>
             <div id="potencia">
                 <h2>Potencia Electrica</h2>
                 <h3>Numero de turbinas * <br> 1/2 * <br> Densidad del agua * <br>Velocidad<sup>3</sup> * <br>Area * <br>Coeficiente de potencia</h3>
-                <h3 id="potenciaFinal">1289W</h3>
+                <h3 id="potenciaFinal">1038.21W</h3>
             </div>
         </div>
 
